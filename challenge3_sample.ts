@@ -16,3 +16,19 @@ const corolla: Car = {
     color: "Red",
     inWarranty: true
 }
+
+interface chair {
+    type:string;
+    color:string | Array<string>;
+    legs:number;
+    hasCushion:boolean;
+    size:string;
+}
+
+const diningTableChair:chair ={
+    type: "glass",
+    color: ["black", "white"],
+    legs: 4,
+    hasCushion: true,
+    size: "medium"
+}
